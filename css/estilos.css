@@ -21,6 +21,10 @@ body {
 h2 {
   margin-top: 0;
 }
+a,
+button {
+  outline: none;
+}
 /** Header **/
 header {
   border-top: 5px solid #6D3425;
@@ -47,7 +51,7 @@ header .container {
   width: 5em;
 }
 .menu-opcoes a {
-  color: white;
+  color: #FFF;
   text-decoration: none;
 }
 .menu-opcoes a:hover {
@@ -58,7 +62,7 @@ header .container {
   background: url(../imagens/destaque.jpg) center bottom repeat-x;
   -webkit-background-size: cover;
   background-size: cover;
-  color: white;
+  color: #FFF;
   height: 330px;
   padding-top: 10em;
 }
@@ -84,6 +88,12 @@ header .container {
   border-radius: 0.3em;
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   font-weight: bold;
+}
+.destaque button:hover {
+  background: #803d2b;
+}
+.destaque button:active {
+  background: #5a2b1f;
 }
 /** Sobre **/
 .sobre {

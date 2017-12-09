@@ -2,6 +2,8 @@
 @main-color: #6D3425;
 @aux-color: #1e2c35;
 @light-color: #FFF;
+@withe-color: #FFF;
+
 
 
 /** Geral **/
@@ -29,6 +31,11 @@ body {
 
 h2 {
   margin-top: 0;
+}
+
+a,
+button {
+  outline: none;
 }
 
 /** Header **/
@@ -63,7 +70,7 @@ header .container {
 }
 
 .menu-opcoes a {
-  color: white;
+  color: @withe-color;
   text-decoration: none;
 }
 
@@ -76,7 +83,7 @@ header .container {
   background: url(../imagens/destaque.jpg) center bottom repeat-x;
   -webkit-background-size: cover;
   background-size: cover;
-  color: white;
+  color: @withe-color;
   height: 330px;
   padding-top: 10em;
 }
@@ -106,6 +113,14 @@ header .container {
   border-radius: 0.3em;
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   font-weight: bold;
+}
+
+.destaque button:hover {
+  background: lighten(@main-color, 5);
+}
+
+.destaque button:active {
+  background: darken(@main-color, 5);
 }
 
 
