@@ -1,0 +1,42 @@
+/** Header **/
+header {
+  border-top: 5px solid @main-color;
+  // background: rgba(30, 44, 53, 0.8);
+  background: fade(@aux-color, 80);
+  height: 90px;
+  width: 100%;
+  position: absolute;
+  
+  .container {
+    position: relative;
+  }
+
+}
+
+.menu-opcoes {
+  position: absolute;
+  right: 0;
+  top: -.5em;
+  font-size: 1.2em;
+  font-weight: lighter;
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    display: inline-block;
+    width: 5em;
+  }
+
+  a {
+    color: @withe-color;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+}
