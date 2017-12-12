@@ -1,10 +1,25 @@
-/** Variáveis **/
+// Variáveis
 @main-color: #6D3425;
 @aux-color: #1e2c35;
 @light-color: #FFF;
 @withe-color: #FFF;
 
 
+// Mixins
+.rounded-border(@border-radius: 0.3em) {
+  -webkit-border-radius: @border-radius;
+  border-radius: @border-radius;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+}
+
+.hide-text {
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
 
 /** Geral **/
 body {
@@ -109,9 +124,8 @@ header .container {
   border: 0;
   padding: .6em;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  .rounded-border(2em);
+  .box-shadow;
   font-weight: bold;
 }
 
@@ -156,9 +170,7 @@ header .container {
   display: inline-block;
   width: 50px;
   height: 60px;
-  text-indent: -9999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
+  .hide-text;
   background-position: center;
   margin: 1em 1.5em 0 0;
 }
@@ -243,9 +255,8 @@ header .container {
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  .rounded-border();
+  .box-shadow;
   margin-left: 2em;
 }
 
@@ -262,7 +273,6 @@ header .container {
 .icone-x {
   background-position: -33px -5px;
 }
-
 
 
 /** Blog **/
@@ -328,8 +338,7 @@ textarea {
   width: 100%;
   margin-bottom: .8em;
   padding: 4px 8px;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  .rounded-border();
   border: 2px solid #ccc;
 }
 
@@ -341,9 +350,8 @@ textarea {
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  .rounded-border();
+  .box-shadow;
 }
 
 /** Footer **/
@@ -423,9 +431,7 @@ footer a {
   display: block;
   width: 55px;
   height: 55px;
-  text-indent: -9999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
+  .hide-text;
   margin-left: 1em;
 }
 
