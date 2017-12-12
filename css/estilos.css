@@ -106,6 +106,12 @@ header .container {
 .sobre {
   background: #ebebeb;
 }
+.sobre p {
+  font: 0.9em/1.8 sans-serif;
+}
+.sobre p:first-child {
+  margin-bottom: 3em;
+}
 .duas-colunas {
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -114,12 +120,6 @@ header .container {
 }
 .duas-colunas h3 {
   margin: 0;
-}
-.sobre p {
-  font: 0.9em/1.8 sans-serif;
-}
-.sobre p:first-child {
-  margin-bottom: 3em;
 }
 .plataformas {
   padding: 0;
@@ -177,6 +177,18 @@ header .container {
   color: #6D3425;
   font-size: 2.75em;
 }
+.plano button {
+  background: #6D3425;
+  border: 0;
+  color: #FFF;
+  width: 210px;
+  height: 38px;
+  font-size: 1.2em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  margin-left: 2em;
+}
 .itens-plano {
   padding-left: 1.2em;
 }
@@ -192,18 +204,6 @@ header .container {
 }
 .itens-plano span {
   float: right;
-}
-.plano button {
-  background: #6D3425;
-  border: 0;
-  color: #FFF;
-  width: 210px;
-  height: 38px;
-  font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  margin-left: 2em;
 }
 .icone-check,
 .icone-x {
@@ -321,6 +321,10 @@ footer .container {
 footer .container img {
   width: 250px;
 }
+footer a {
+  color: #FFF;
+  text-decoration: none;
+}
 .menu-rodape,
 .social {
   position: absolute;
@@ -337,13 +341,18 @@ footer .container img {
   bottom: 0;
   right: 0;
 }
-.menu-rodape li,
-.social li {
-  display: inline;
+.social a {
+  background-position: top;
+  background-size: 50px 50px;
 }
-footer a {
-  color: #FFF;
-  text-decoration: none;
+.social a[href*="facebook"] {
+  background-image: url(../imagens/facebook.png);
+}
+.social a[href*="twitter"] {
+  background-image: url(../imagens/twitter.png);
+}
+.social a[href*="instagram"] {
+  background-image: url(../imagens/instagram.png);
 }
 .social li {
   float: left;
@@ -357,16 +366,7 @@ footer a {
   background-repeat: no-repeat;
   margin-left: 1em;
 }
-.social a {
-  background-position: top;
-  background-size: 50px 50px;
-}
-.social a[href*="facebook"] {
-  background-image: url(../imagens/facebook.png);
-}
-.social a[href*="twitter"] {
-  background-image: url(../imagens/twitter.png);
-}
-.social a[href*="instagram"] {
-  background-image: url(../imagens/instagram.png);
+.menu-rodape li,
+.social li {
+  display: inline;
 }
