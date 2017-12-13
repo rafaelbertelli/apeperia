@@ -375,6 +375,11 @@ body {
   width: 940px;
   margin: 0 auto;
 }
+@media (max-width: 980px) {
+  .container {
+    width: 90%;
+  }
+}
 .titulo-secao {
   text-decoration: underline;
   font-size: 2em;
@@ -401,8 +406,18 @@ header {
   width: 100%;
   position: absolute;
 }
+@media (max-width: 980px) {
+  header {
+    height: auto;
+  }
+}
 header .container {
   position: relative;
+}
+@media (max-width: 980px) {
+  header .container {
+    position: static;
+  }
 }
 .menu-opcoes {
   position: absolute;
@@ -411,12 +426,24 @@ header .container {
   font-size: 1.2em;
   font-weight: lighter;
 }
+@media (max-width: 980px) {
+  .menu-opcoes {
+    position: static;
+    display: block;
+    text-align: center;
+  }
+}
 .menu-opcoes ul {
   padding-left: 0;
 }
 .menu-opcoes li {
   display: inline-block;
   width: 5em;
+}
+@media (max-width: 980px) {
+  .menu-opcoes li {
+    margin: .4em;
+  }
 }
 .menu-opcoes a {
   color: #FFF;
@@ -433,6 +460,12 @@ header .container {
   color: #FFF;
   height: 330px;
   padding-top: 10em;
+}
+@media (max-width: 980px) {
+  .destaque {
+    font-size: 14px;
+    height: 250px;
+  }
 }
 .destaque p {
   width: 30em;
@@ -729,15 +762,6 @@ footer a {
   display: inline;
 }
 @media (max-width: 980px) {
-  .container {
-    width: 90%;
-  }
-  header {
-    height: auto;
-  }
-  header .container {
-    position: static;
-  }
   header h1 {
     max-width: 50%;
     margin: 0 auto;
@@ -746,18 +770,6 @@ footer a {
     max-width: 100%;
     margin: .5em auto;
     display: block;
-  }
-  .menu-opcoes {
-    position: static;
-    display: block;
-    text-align: center;
-  }
-  .menu-opcoes li {
-    margin: .4em;
-  }
-  .destaque {
-    font-size: 14px;
-    height: 250px;
   }
   .menu-opcoes,
   .menu-opcoes li,
